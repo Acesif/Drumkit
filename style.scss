@@ -1,0 +1,33 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px rgb(196, 153, 153) dashed;
+        kbd{
+            font-size: 50px;
+        }
+        span{
+            font-size: 30px;
+        }
+    }
+    .play{
+        background-color: rgb(198, 166, 166);
+        transition: all 200ms ease-in-out;
+    }
+    .button:hover{
+        cursor: pointer;
+        user-select: none;
+    }
+}
